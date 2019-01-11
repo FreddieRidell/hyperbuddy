@@ -1,4 +1,4 @@
-#!env node
+#!/usr/bin/env node
 
 import hyperdb from "hyperdb";
 import ram from "random-access-memory";
