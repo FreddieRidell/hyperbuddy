@@ -1,0 +1,55 @@
+{
+  "name": "@hypercortex/hyperbuddy",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --coverage true src test",
+    "build": "NODE_ENV=production babel src --out-dir lib",
+    "format": "prettier --write src/**/*",
+    "watch": "NODE_ENV=staging babel src --out-dir lib --watch",
+    "test_watch": "NODE_ENV=test jest src test --watch --bail --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FreddieRidell/hyperbuddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreddieRidell/hyperbuddy/issues"
+  },
+  "homepage": "https://github.com/FreddieRidell/hyperbuddy#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-freddie-ridell": "0.0.8",
+    "eslint": "^5.12.0",
+    "eslint-config-react-app": "^3.0.6",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3",
+    "jest-cli": "^23.6.0",
+    "prettier": "^1.15.3"
+  },
+  "babel": {
+    "presets": [
+      "freddie-ridell"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "files": [
+    "/index.js",
+    "/lib",
+    "/main.js"
+  ],
+  "prettier": {
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": true
+  },
+  "dependencies": {},
+  "description": ""
+}
