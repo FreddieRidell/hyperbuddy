@@ -1,3 +1,5 @@
+#!env node
+
 import hyperdb from "hyperdb";
 import ram from "random-access-memory";
 import net from "net";
