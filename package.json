@@ -7,7 +7,8 @@
 		"build": "NODE_ENV=production babel src --out-dir lib",
 		"format": "prettier --write src/**/*",
 		"watch": "NODE_ENV=staging babel src --out-dir lib --watch",
-		"test_watch": "NODE_ENV=test jest test --watch --bail --runInBand"
+		"test_watch": "NODE_ENV=test jest test --watch --bail --runInBand",
+		"prepublish": "npm run build && chmod +x lib/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -33,6 +34,9 @@
 		"jest-cli": "^23.6.0",
 		"prettier": "^1.15.3",
 		"random-access-memory": "^3.1.1"
+	},
+	"bin": {
+		"hyperbuddy": "lib/index.js"
 	},
 	"babel": {
 		"presets": [
