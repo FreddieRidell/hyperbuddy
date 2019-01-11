@@ -51,6 +51,7 @@
 		"useTabs": true
 	},
 	"dependencies": {
+		"@hyperswarm/network": "0.0.4",
 		"portfinder": "^1.0.20"
 	},
 	"description": ""
